@@ -2,7 +2,6 @@ package solutions.season2015;
 
 import solutions.Solution;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;

@@ -21,7 +21,7 @@ public class Day2a implements Solution {
 
             Arrays.sort(d);
 
-            area += d[0] * d[1] * 3 + d[1] * d[2] * 2 + d[2] * d[0] * 2;
+            area += (long) d[0] * d[1] * 3 + (long) d[1] * d[2] * 2 + (long) d[2] * d[0] * 2;
         }
 
         return area + "";

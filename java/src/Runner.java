@@ -3,7 +3,7 @@ import solutions.Solution;
 import java.util.Scanner;
 
 public class Runner {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Which year? (2015, 2016, ...)");

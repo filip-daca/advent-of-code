@@ -14,14 +14,14 @@ public class Day2b implements Solution {
             String line = sc.nextLine();
             String[] dimensionsStrings = line.split("x");
             int[] d = new int[3];
-
-            for (int i = 0; i<3; i++) {
+            
+            for (int i = 0; i < 3; i++) {
                 d[i] = Integer.parseInt(dimensionsStrings[i]);
             }
 
             Arrays.sort(d);
 
-            length += d[0] * 2 + d[1] * 2 + d[0] * d[1] * d[2];
+            length += d[0] * 2L + d[1] * 2L + (long) d[0] * d[1] * d[2];
         }
 
         return length + "";

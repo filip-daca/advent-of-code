@@ -4,6 +4,7 @@ import solutions.Solution;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
@@ -12,12 +13,8 @@ public class Day4a implements Solution {
 
     private static boolean startsWithZeros(String input, MessageDigest md) {
         byte[] bytesOfMessage = null;
-
-        try {
-            bytesOfMessage = input.getBytes("UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
-        }
+        
+        bytesOfMessage = input.getBytes(StandardCharsets.UTF_8);
 
         byte[] md5 = md.digest(bytesOfMessage);
 
