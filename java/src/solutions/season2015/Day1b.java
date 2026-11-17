@@ -5,6 +5,7 @@ import solutions.Solution;
 import java.util.Scanner;
 
 public class Day1b implements Solution {
+    @Override
     public String solve(Scanner sc) {
         int floor = 0;
         int basementStep = -1;
